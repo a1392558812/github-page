@@ -2,6 +2,7 @@
   "name": "github-page",
   "version": "0.0.0",
   "private": true,
+  "homepage": "/github-page/",   // 更改为你的项目路径
   "scripts": {
     "dev": "vite",
     "build": "vite build",
