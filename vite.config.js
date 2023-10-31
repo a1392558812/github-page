@@ -17,7 +17,7 @@ export default defineConfig(({command, mode }) => {
       copy({
         targets: [
             { 
-                src: 'index.html', 
+                src: 'dist/index.html', 
                 dest: 'public' ,
                 rename: (name, extension, fullPath) => {
                     console.log('name, extension, fullPath: -->', name, extension, fullPath)
