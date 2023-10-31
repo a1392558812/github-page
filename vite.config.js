@@ -18,13 +18,14 @@ export default defineConfig(({command, mode }) => {
         targets: [
             { 
                 src: 'dist/index.html', 
-                dest: 'public' ,
+                dest: 'dist' ,
                 rename: (name, extension, fullPath) => {
                     console.log('name, extension, fullPath: -->', name, extension, fullPath)
                     return `404.html`
                 }
             },
-        ]
+        ],
+        hook: 'writeBundle'
       })
     ],
     resolve: {
